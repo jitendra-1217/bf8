@@ -1,7 +1,7 @@
 /*
  * Jitendra Ojha
  *
- * Software engineer @ Practo
+ * NIT Patna
  */
 
 //Includes
