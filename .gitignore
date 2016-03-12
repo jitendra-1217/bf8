@@ -27,4 +27,7 @@
 *.out
 *.app
 
+*.pyc
+*.pyo
+
 .ropeproject
