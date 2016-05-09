@@ -31,3 +31,4 @@
 *.pyo
 
 .ropeproject
+test.cpp

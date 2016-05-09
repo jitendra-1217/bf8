@@ -1,10 +1,4 @@
-/*
- * Jitendra Ojha
- *
- * NIT Patna
- */
-
-//Includes
+// Includes
 #include <iostream>
 #include <algorithm>
 #include <deque>
@@ -18,10 +12,21 @@
 #include <string>
 #include <utility>
 #include <vector>
-
+#include <cmath>
+// Defines
+#define uli unsigned long int
+#define li  long int
+// Namespaces
 using namespace std;
+// Prototypes
 
+// Main
+/**
+ * [main description]
+ * @return [description]
+ */
 int main()
 {
+    // main()
     return 0;
 }
