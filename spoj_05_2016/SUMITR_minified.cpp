@@ -1,0 +1,1 @@
+#include <iostream> int main(){int t,n,i,j,ans;std::cin>>t;while(t--){std::cin>>n;int a[101][101]={0};std::cin>>a[0][0];for(i=1;i<n;++i){for(j=0;j<=i;++j){std::cin>>a[i][j];if(j==0)a[i][j]+=a[i-1][j];else a[i][j]+=(a[i-1][j]>a[i-1][j-1]?a[i-1][j]:a[i-1][j-1]);}}ans=a[n-1][0];for(j=1;j<n;++j){if(a[n-1][j]>ans)ans=a[n-1][j];}std::cout<<ans<<endl;}return 0;}
