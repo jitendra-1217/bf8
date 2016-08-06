@@ -1,5 +1,5 @@
 // Includes
-#include <iostream>
+#include <cstdio>
 #include <cmath>
 // Namespaces
 using namespace std;
@@ -13,24 +13,25 @@ using namespace std;
 int main()
 {
     // main()
-    int n, s, i, nf;
-    cin >> n;
-    s = (int) sqrt(n);
-    int a = 0;
-    while (n)
+    int n, x, i, y, j;
+    scanf("%d", &n);
+    x = 1;
+    // printf("x = %d\n", x);
+    for (i = 2; i <= n; ++i)
     {
-        nf = 1;
-        s = (int) sqrt(n);
-        for (i = 2; i <= s; ++i)
+        ++x;
+        y = (int) sqrt(i);
+        // printf("------> y = %d\n", y);
+        for (j = 2; j <= y; ++j)
         {
-            if (n%i == 0)
+            if (i % j == 0)
             {
-                ++nf;
+                ++x;
             }
         }
-        a += nf;
-        --n;
+        // printf("x = %d\n", x);
     }
-    cout << a;
+    printf("%d\n", x);
+
     return 0;
 }
